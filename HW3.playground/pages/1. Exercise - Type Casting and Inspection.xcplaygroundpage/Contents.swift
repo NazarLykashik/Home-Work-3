@@ -6,8 +6,9 @@
 
 import Foundation
 let something: [Any] = [1.5, 1.87, 2, 5,"Petia", "Vasia", true, false]
-print(something)
-
+for item in something{
+print(item)
+}
 /*:
  Пройдите по всем элементам коллекции.  Для каждого целого, напечайте "Целое число " и его значение.  Повторите то же самое для вещественных чисел, строк и булевых значений.
  */
@@ -30,7 +31,12 @@ for item in something{
 /*:
  Создайте словарь [String : Any], где все значения — это смесь вещественных и целых чисел, строк и булевых значений.  Выведите пары ключ/значения для всех элементов коллекции.
  */
-let dictionaryWithNimbersAndBools: [String: Any] =  ["Int": 1, "Double": 1.5, "Bool": true, "Bool false": false, "String": "PavbIv","String1": "56"]
+let dictionaryWithNimbersAndBools: [String: Any] =  ["Int": 1,
+                                                     "Double": 1.5,
+                                                     "Bool": true,
+                                                     "Bool false": false,
+                                                     "String": "PavbIv",
+                                                     "String1": "56"]
 
 for (key, value) in dictionaryWithNimbersAndBools{
     print("Key \(key) and value \(value)")
